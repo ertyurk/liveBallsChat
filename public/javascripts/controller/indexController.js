@@ -1,5 +1,11 @@
 app.controller('indexController', ['$scope', 'indexFactory', ($scope, indexFactory) =>{
 
+  $scope.messages = [{
+    text: 'selam',
+  },{
+    text: 'merhaba',
+  }];
+
   $scope.init = () => {
     const username = prompt('Please enter username');
     if (username)
